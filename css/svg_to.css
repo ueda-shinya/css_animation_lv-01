@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.svg__to{
+    width: 160px;
+    margin: 20% auto;
+}
+
+#o{
+    animation: widthchange2 ease-in-out 5s;
+}
+@keyframes widthchange2{
+    from{
+        fill:yellow;
+    }
+    to{
+        fill:red;
+    }
+}
+
+#frame{
+    animation: widthchange ease-in-out 5s;
+}
+@keyframes widthchange{
+    from{
+        transform : translate(80px, 80px);
+        width :0;
+        height: 0;
+    }
+    to{
+        transform : translate( 0px, 0px);
+        width: 159;
+        height:159;
+    }
+}
+
+#t-yoko,#t-tate{
+    animation: colorchange ease-in-out 5s;
+}
+@keyframes colorchange{
+    from{
+        fill:red;
+         transform : translate(300px, 300px);
+    }
+    to {
+        fill:blue;
+        transform : translate(0px, 0px);
+    }
+}
