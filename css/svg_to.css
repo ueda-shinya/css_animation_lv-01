@@ -39,7 +39,7 @@
 @keyframes colorchange{
     from{
         fill:red;
-         transform : translate(300px, 300px);
+         transform : translate(160px, 160px);
     }
     to {
         fill:blue;
