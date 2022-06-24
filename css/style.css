@@ -5,61 +5,105 @@ body{
     margin: 128px auto;
 }
 .btn{
-    width : 320px;
+    width : 400px;
     margin: 64px auto;
     padding: 32px;
 }
+
+/**************************************
+    SVGのボタン
+**************************************/
 .btn__svg_to{
-    color: #b1921b;
+    color:black;
     border-right: 4px solid #cea82c;
     border-bottom: 10px solid #987c1e;
     border-left: 4px solid #ffed8b;
     border-radius: 0;
-    background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
-    background: -webkit-linear-gradient(right, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
-    background: linear-gradient(-90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
+    background: -webkit-linear-gradient(left, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+    background: linear-gradient(90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
     text-shadow: -1px -1px 1px #ffffd9;
 }
 .btn__svg_to:hover{
-    animation: btn__gold ease-in-out 0.2s ;/*infinite;*/
+    animation: btn__gold linear 0.1s ;
+    animation-fill-mode: forwards;
 }
 @keyframes btn__gold {
     0% {
-        background: -webkit-gradient(linear, right top, left top, from(#ffffdb ), color-stop(30%, #fff5a0), color-stop(40%, #fdd456), color-stop(50%, #fdd456), color-stop(70%, #fdd456), to(#fdd456));
-        background: -webkit-linear-gradient(right, #ffffdb  0%, #fff5a0 30%, #fdd456 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
-        background: linear-gradient(-90deg, #ffffdb  0%, #fff5a0 30%, #fdd456 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#ffffdb ), color-stop(30%, #fff5a0), color-stop(40%, #fdd456), color-stop(50%, #fdd456), color-stop(70%, #fdd456), to(#fdd456));
+        background: -webkit-linear-gradient(left, #ffffdb  0%, #fff5a0 30%, #fdd456 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
+        background: linear-gradient(90deg, #ffffdb  0%, #fff5a0 30%, #fdd456 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
     
     }
     25%{
-        background: -webkit-gradient(linear, right top, left top, from(#fff5a0), color-stop(30%, #ffffdb), color-stop(40%, #fff5a0), color-stop(50%, #fdd456), color-stop(70%, #fdd456), to(#fdd456));
-        background: -webkit-linear-gradient(right, #fff5a0 0%, #ffffdb 30%, #fff5a0 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
-        background: linear-gradient(-90deg, #fff5a0 0%, #ffffdb 30%, #fff5a0 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#fff5a0), color-stop(30%, #ffffdb), color-stop(40%, #fff5a0), color-stop(50%, #fdd456), color-stop(70%, #fdd456), to(#fdd456));
+        background: -webkit-linear-gradient(left, #fff5a0 0%, #ffffdb 30%, #fff5a0 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
+        background: linear-gradient(90deg, #fff5a0 0%, #ffffdb 30%, #fff5a0 40%, #fdd456 50%, #fdd456 70%, #fdd456 100%);
 
     }
     50% {
-        background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
-        background: -webkit-linear-gradient(right, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
-        background: linear-gradient(-90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
+        background: -webkit-linear-gradient(left, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+        background: linear-gradient(90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
         }
     75%{
-        background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #ffd75b), color-stop(40%, #ffd75b), color-stop(50%, #fff5a0), color-stop(70%, #ffffdb), to(#fff5a0));
-        background: -webkit-linear-gradient(right, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #fff5a0 50%, #ffffdb 70%, #fff5a0 100%);
-        background: linear-gradient(-90deg, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #fff5a0 50%, #ffffdb 70%, #fff5a0 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#ffd75b), color-stop(30%, #ffd75b), color-stop(40%, #ffd75b), color-stop(50%, #fff5a0), color-stop(70%, #ffffdb), to(#fff5a0));
+        background: -webkit-linear-gradient(left, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #fff5a0 50%, #ffffdb 70%, #fff5a0 100%);
+        background: linear-gradient(90deg, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #fff5a0 50%, #ffffdb 70%, #fff5a0 100%);
     }
     100% {
-        background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #ffd75b), color-stop(40%, #ffd75b), color-stop(50%, #ffd75b), color-stop(70%, #fff5a0), to(#ffffdb));
-        background: -webkit-linear-gradient(right, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #ffd75b 50%, #fff5a0 70%, #ffffdb 100%);
-        background: linear-gradient(-90deg, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #ffd75b 50%, #fff5a0 70%, #ffffdb 100%);
-    
+        background: -webkit-gradient(linear, left top, right top, from(#ffd75b), color-stop(30%, #ffd75b), color-stop(40%, #ffd75b), color-stop(50%, #ffd75b), color-stop(70%, #fff5a0), to(#ffffdb));
+        background: -webkit-linear-gradient(left, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #ffd75b 50%, #fff5a0 70%, #ffffdb 100%);
+        background: linear-gradient(90deg, #ffd75b 0%, #ffd75b 30%, #ffd75b 40%, #ffd75b 50%, #fff5a0 70%, #ffffdb 100%);
     }
     
 }
-
-.test{
-    margin-top: 3px;
-
-    color: #b1921b;
-    border-right: 4px solid #cea82c;
-    border-bottom: 7px solid #987c1e;
-    border-left: 4px solid #ffed8b;
+/**************************************
+    transformのボタン
+**************************************/
+.btn__transform {
+    margin-top: 64px;
+    color: white;
+    background-color: blue;
+    border-bottom: 5px solid navy;
 }
+.btn__transform:hover {
+    margin-top: 67px;
+    color: white;
+    background: blue;
+    border-bottom: 2px solid navy;
+}
+.btn__transform-shadow {
+    /* offset-x offset-y blur-radius(ぼかし) spread-radius(拡張) */
+    -webkit-box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 1);
+}
+/**************************************
+    ダウンロードのボタン
+**************************************/
+.btn__download {
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    background: #000;
+}
+.btn__download::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    /* property duration(アニメーションの時間) delay timing */
+    -webkit-transition: all 10s 0s ease-in-out;
+    transition: all 10s 0s ease-in-out;
+    -webkit-transform: translateY(-90%);
+    transform: translateY(-90%);
+    background: #eb6877;
+}
+.btn__download:hover::before {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
